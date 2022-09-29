@@ -1,0 +1,38 @@
+<%- include('./layout/header.ejs', title="Delete User")%>
+
+    <div class="container_details">
+        <input type="text" id="id" value="<%= user.id%>" hidden>
+        <h2>Nombres: <%= user.nombres%></h2>
+        <h2>Apellidos: <%= user.apellidos%></h2>
+        <h3>Edad: <%= user.edad%></h3>
+        <button id="delete">Eliminar</button>
+    </div>
+
+<%- include('./layout/footer.ejs')%>
+
+<script>
+    const deleteUser = document.getElementById("delete");
+
+    deleteUser.addEventListener("click", async function(e) {
+        e.preventDefault();
+
+        const id = document.getElementById("id").value;
+        
+        let confirma = confirm(`desea eliminar el usuario <%= user.nombres%>`)
+        if (confirma) {
+            try {
+                let options = {
+                    method: "DELETE",
+                    headers: { "Content-type": "application/json"}
+                }
+    
+                const data = await fetch("http://localhost:3000/users/"+id, options)
+                const res = await data.json();
+                window.location.href='/users/lista'
+            } catch (error) {
+                console.log(error);
+            }
+            
+        }
+    })
+</script>

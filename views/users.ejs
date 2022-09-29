@@ -1,0 +1,25 @@
+<%- include('./layout/header.ejs', title="Users")%>
+<div class="container">
+    <h1>Usuarios</h1>
+    <table class="table">
+        <thead>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Edad</th>
+        </thead>
+        <tbody>
+            <% users.map((el)=>{%>
+            <tr key={el.id}>
+                <td><%= el.nombres%></td>
+                <td><%= el.apellidos%></td>
+                <td><%= el.edad%></td>
+                <td><a class="btnEdit" href="./edit/<%= el.id%>">Editar</a></td>
+                <td><a class="btnDelete" href="./delete/<%= el.id%>">Eliminar</a></td>
+            </tr>
+            <% })%>
+        </tbody>
+    </table>
+</div>
+    
+
+<%- include('./layout/footer.ejs')%>

@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+
+.navbar{
+    display:flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    padding-left: 1rem;
+}
+
+.navbar li {
+    list-style: none;
+    margin-right: 1rem;
+}
+
+.navbar a {
+   text-decoration: none;
+   padding: 15px;
+   font-size: 2rem;
+   color: #fff;
+   background-color: #0d6efd;
+   border-radius: 12px;
+   border-color: #0d6efd;
+}
+
+.navbar a:hover{
+  color: black;
+  background-color: white;
+  border: 1px solid #0d6efd;
+}
+
+/* TABLA DE USUARIOS */
+
+.container h1{
+    text-align: center;
+    margin: 2rem 2rem;
+    font-size: 4rem;
+}
+
+.table{
+    margin: 0 auto;
+    background-color: silver;
+    border-radius: 5px;
+    padding: 1rem 8px;
+}
+
+.table thead th{
+    padding: 0 8rem;
+    font-size: 2rem;
+}
+
+.table tbody td{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.btnEdit {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: black;
+}
+
+.btnEdit:hover{
+  color: #000;
+  background-color: #ffca2c;
+  border-color: #ffc720;
+}
+
+.btnDelete {
+    color: #fff;
+    font-size: 17px;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    padding: 10px;
+    border-radius: 12px;
+    text-decoration: none;
+  }
+  .btnDelete:hover {
+    color: #fff;
+    background-color: #bb2d3b;
+    border-color: #b02a37;
+  }
+
+  /* FORMULARIO DE USUARIOS */
+
+  .container_form {
+    width: 40vw;
+    margin: 2rem auto;
+    background-color: silver;
+    border-radius: 15px;
+    padding: 1.5rem 8px;
+  }
+
+  .container_form h1{
+    text-align: center;
+    margin: 2rem 2rem;
+    font-size: 4rem;
+  }
+
+  .form_create_users label{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .form_create_users input{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    border-radius: 10px;
+    border: none;
+    padding: 5px 10px;
+  }
+
+  .form_create_users button{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 50px;
+    color: #fff;
+    background-color: #0d6efd;
+    border-radius: 12px;
+    border-color: #0d6efd;
+    font-size: 2rem;
+    padding: 5px 10px;
+  }
+
+  .form_create_users button:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid #0d6efd;
+    cursor: pointer;
+    
+  }
+
+  /* DETALLES */
+
+  .container_details{
+    width: 60vw;
+    margin: 2rem auto;
+    text-align: center;
+    background-color: silver;
+    border-radius: 15px;
+    padding: 1.5rem 8px;
+  }
+
+  .container_details * {
+    padding-bottom: 2rem;
+  }
+
+  .container_details button{
+    color: #fff;
+    font-size: 17px;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    padding: 10px;
+    border-radius: 12px;
+    text-decoration: none;
+  }
+
+  .container_details button:hover{
+    color: #fff;
+    background-color: #bb2d3b;
+    border-color: #b02a37;
+    cursor: pointer;
+  }
